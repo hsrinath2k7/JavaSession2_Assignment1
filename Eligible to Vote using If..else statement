@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class ControlAStrucAss1 {
+	
+	
+	public static void ageCalculation(int age)
+	{
+		
+		// If else condition is declared in separate method
+	 if (age>=18)
+	 {
+		 System.out.println("You are eligible to vote");
+	 }
+	 else{
+		 System.out.println("You are not eligible to vote");
+	 }
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  int age;
+	     // Scanner is used for getting inputs from user through Console
+	      Scanner read = new Scanner(System.in);
+	 
+	      
+	      // Here removed "ln" from Print, so the user input appears in the same line
+	      System.out.print("Please enter your age: ");
+	      
+	      // Entered value is taken as an integer input otherwise will consider as string
+	      age = read.nextInt();
+	     
+	      //Input from user is passed to the static method
+	      ageCalculation(age);
+	           
+
+	}
+
+}
+
+/* Output
+Please enter your age: 18
+You are eligible to vote
+*/
